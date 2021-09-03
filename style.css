@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+      font-family:fantasy;
+       font-size:1rem;
+       height:100vh;
+       width:100%;
+       background:linear-gradient(to right bottom, #0f0, #00f);
+       display:flex;
+       justify-content: center;
+       align-items: center;
+
+}
+.container{
+      height:55vh;
+      max-width:500px;
+      background:rgba(128, 0, 128, 0.301);
+      margin:2.5em auto;
+      position:relative;
+      border-radius: 10px;
+      overflow:hidden;
+      z-index:10;
+         
+}
+.calculator{
+    position:relative;
+    display:grid;
+}
+.calculator > .value{
+        grid-column:span 4;
+        height:90px;
+        width:400px;
+        padding:10px;
+        text-align:right;
+        border:none;
+        outline:none;
+        font-size:20px;
+        background:rgba(128, 0, 0, 0.123);
+        color:#fff;
+}
+
+.calculator >span{
+      display:grid;
+      height:80px;
+      width:100px;
+      justify-content: center;
+      align-items: center; 
+       font-weight:300;
+       font-size:2rem;
+       cursor: pointer;
+       user-select: none;
+      
+
+}
+.calculator >span:hover{
+       transition:1s;
+       background:rgba(0, 0, 255, 0.164);
+}
+.calculator >span:active{
+      background:rgba(128, 0, 0, 0.877);
+      color:#fff;
+}
+.container> .calculator> .num-clear{
+      grid-column:span 2;
+      width:130px;
+}
+
+.container> .calculator> .num-plus{
+    grid-row:span 2;
+    height:130px;
+}
+.num-equal{
+      background:rgba(238, 130, 238, 0.24);
+}
